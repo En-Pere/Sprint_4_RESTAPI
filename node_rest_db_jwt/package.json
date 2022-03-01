@@ -1,0 +1,27 @@
+{
+  "name": "node_rest_db_jwt",
+  "version": "1.0.0",
+  "description": "joc de daus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "#nodejs",
+    "#express",
+    "#sequelize",
+    "#mysql"
+  ],
+  "author": "pere",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "jwt-simple": "^0.5.6",
+    "moment": "^2.29.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.16.1"
+  }
+}
