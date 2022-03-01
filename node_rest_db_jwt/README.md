@@ -21,10 +21,10 @@ node index.js
 # Funcionalidades:
 **Ejemplos en Postman**
 
-*//retorna el lista de tots els jugador amb el set percentatge d’exit mig.
+*//retorna el lista de tots els jugador amb el set percentatge d’exit mig.*
 GET —> http://localhost:8080/api/jocdedaus/
 
-*//crea un jugador
+*//crea un jugador*
 POST: —> http://localhost:8080/api/jocdedaus/post/players
  {
   "name": "federico",
@@ -33,13 +33,13 @@ POST: —> http://localhost:8080/api/jocdedaus/post/players
   "dau2": 6
   }
 
-*//modifica el nom del jugador:
+*//modifica el nom del jugador:*
 PUT: —> http://localhost:8080/api/jocdedaus/put/players/PLAYERNAME
 {
     “name: “antonio”,
 }
 
-*//jugador específico realiza una tirada
+*//jugador específico realiza una tirada*
 POST: --> http://localhost:8080/api/jocdedaus/players/games/PLAYERNAME
   {
   "game": "3",
@@ -47,36 +47,52 @@ POST: --> http://localhost:8080/api/jocdedaus/players/games/PLAYERNAME
   "dau2": 5,
   }
 
-*//elimina tirades d’un jugador
+*//elimina tirades d’un jugador*
+
 DELETE —> http://localhost:8080/api/jocdedaus/players/games/PLAYERNAME
 
-*//retorna llistat de jugades per jugador:
+*//retorna llistat de jugades per jugador:*
+
 GET —> http://localhost:8080/api/jocdedaus/players/games/PLAYERNAME
 
-*//retorna el percentatge mig d’exits del conjoint de tots els jugadors
+*//retorna el percentatge mig d’exits del conjoint de tots els jugadors*
+
 GET —>http://localhost:8080/api/jocdedaus/ranking
 
-*//retorna jugador amb millor percentatge d’èxits
+*//retorna jugador amb millor percentatge d’èxits*
+
 GET —> http://localhost:8080/api/jocdedaus/winner
 
-*//retorna jugador amb pitjor percentatge d’èxits
+*//retorna jugador amb pitjor percentatge d’èxits*
+
 GET —> http://localhost:8080/api/jocdedaus/loser
+
 
 ——————————————
 
-*//crea un usuari nou
+
+*//crea un usuari nou*
+
 POST —> http://localhost:8080/api/users/register
+
 username: xxx
+
 email: xxx@xxx.com
+
 password: ++++
 
-*//genera token per poder accedir al joc
+*//genera token per poder accedir al joc*
+
 GET —> http://localhost:8080/api/users/login
 
-*//retorna tots els usuaris
+*//retorna tots els usuaris*
+
 GET —> http://localhost:8080/api/users/register
 
-*//Per entrar a qualsevol ruta del /jocdedaus/
+*//Per entrar a qualsevol ruta del /jocdedaus/*
+
 Postman headers:
+
 KEY: “user-token”
+
 VALUE: (insert generated token)
